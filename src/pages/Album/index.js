@@ -47,7 +47,6 @@ const Album = () => {
 
     useEffect(() => {
         setIsShow(isPlaying);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isPlaying]);
 
     return (

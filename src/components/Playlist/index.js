@@ -114,7 +114,7 @@ const Playlist = ({ songs }) => {
 
     useEffect(() => {
         setForceRerender(true);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [isLoadingData]);
 
     useEffect(() => {

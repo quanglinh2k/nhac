@@ -34,7 +34,6 @@ const Lyric = ({ audioEl, isIdle }) => {
         if (activeLyric >= 0 && refs.length) {
             refs[activeLyric].current.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [refs]);
 
     useEffect(() => {

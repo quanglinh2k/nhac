@@ -168,7 +168,6 @@ const Footer = () => {
             audioEl.volume = volume / 100;
         }
 
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [audioEl]);
 
     useEffect(() => {

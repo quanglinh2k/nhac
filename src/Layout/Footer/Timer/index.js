@@ -68,7 +68,6 @@ const Timer = () => {
             }
         };
 
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [timer, setTimer, isPlaying]);
 
     return (

@@ -58,8 +58,6 @@ const Player = ({ audioEl, onNext, onPrev, active, isIdle }) => {
 
     useEffect(() => {
         mediaSession(currentSong, audioEl, onNext, onPrev);
-
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentSong, audioEl]);
 
     useEffect(() => {
@@ -104,7 +102,7 @@ const Player = ({ audioEl, onNext, onPrev, active, isIdle }) => {
                 audioEl.removeEventListener('loadeddata', handleLoadeddata);
             }
         };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [audioEl, isRepeat, isRandom, idCurrentSong, onNext]);
 
     useEffect(() => {
@@ -116,7 +114,6 @@ const Player = ({ audioEl, onNext, onPrev, active, isIdle }) => {
             }
         }
 
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentSong, isPlaying]);
 
     return (
